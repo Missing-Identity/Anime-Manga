@@ -1,0 +1,60 @@
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;//This is to center a block element inside another block element.
+
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+
+        @include respond(tab-port) {
+            margin-bottom: $gutter-vertical-small;//Making the vertical height smaller for mobile views.
+        }
+    }//not here basically selects everything BUT the last child in this case.
+
+    @include respond(tab-port) {
+        max-width: 50rem;//Changing width of the col rows to fix the cols and cards width in mobile view.
+        padding: 0 3rem;//Adding padding to left and right of rows so that we can push border lines further away from sticking to sides
+    }
+
+    @include clearfix;
+
+    [class^="col-"] {
+        float: left;
+        
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+
+            @include respond(tab-port) {
+                margin-right: 0;//Since the columns are not side by side in mobile view. We don't need the margin.
+                margin-bottom: $gutter-vertical-small;//Adding margin at the bottom of the cols in mobile view
+            }
+        }
+
+        @include respond(tab-port) {
+            width: 100% !important;
+        }//Making col width 100% for devices <=900px so only 1 column appears on the page
+    }//This selects all class attributes that start with col- and applies the style to it.
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    }
+
+    .col-2-of-3 {
+        width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+    }
+
+    .col-2-of-4 {
+        width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
+    }
+
+    .col-3-of-4 {
+        width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
+    }
+}

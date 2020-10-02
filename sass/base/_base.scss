@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;/*Removing default margin and padding from site*/
+    box-sizing: inherit;/*This changes the box model so that the borders and the paddings are no longer added to the total width or height that we specify in the box.*/
+}
+
+html {
+    font-size: 62.5%;//Defines what 1 rem should be. Here we have set it to 1 rem = 10px
+
+    @include respond(big-desktop) {
+        font-size: 65%;// 1 rem = 12px, 12/16 = 75%
+    }
+
+    @include respond(tab-land) { // This asks width < 900? So we should have this first here
+        font-size: 56.25%;// 1rem = 9px, 9/16 = 56.25%
+    }
+
+    @include respond(tab-port) { // This asks width <600? This takes precedence over the previous media query.
+        font-size: 50%;// 1rem = 8px, 8/16 = 50%
+    }//We don't apply phone size query here as we are already reducing font size to 50% with min-width in tab-port. So it will be unnecessary.
+}//Remember to keep queries in decreasing order.
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+
+    background-color: $color-primary-dark;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }//Removing padding on devices from tab-port.
+}

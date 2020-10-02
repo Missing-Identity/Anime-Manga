@@ -1,0 +1,17 @@
+.section-review {
+    background-image: linear-gradient(to right bottom, rgba($color-secondary-dark, 0.4), rgba($color-secondary-light, 0.4)), url(../img/Reviews-BG.jpg);
+    background-size: cover;
+    padding: 25rem 0;
+    margin-top: -20vh;//Moves margin up instead of top.
+
+    .row__bg {
+        background-color: rgba($color-black, 0.4);
+        padding: 1rem;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }//Making padding between sections a little smaller for smaller screen sizes.
+}

@@ -1,0 +1,171 @@
+.navigation {
+
+    &__checkbox {
+        display: none;//Removing the checkbox cause we don't need it to be seen on the page.
+    }
+
+    &__button {
+        background-color: $color-white;
+        height: 7rem;
+        width: 7rem;//These values should be higher than the background to cover it basically.
+        position: fixed;
+        top: 6rem;
+        right: 6rem;//To cover the background. This value is lower because the button is anyway bigger that the background
+        border-radius: 50%;
+        z-index: 2000;
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        text-align: center;//Centering nav lines.
+        cursor: pointer;
+
+        @include respond(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }//Fixing nav pill position for tab-port and below sizes.
+
+        @include respond(phone) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }//Fixing nav pill position for mobile sizes.
+    }
+
+    &__background {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;//Similar to absolute but stays on the page at that position even if we scroll.
+        top: 6.5rem;
+        right: 6.5rem;
+        background-image: radial-gradient(rgba($color-primary-dark, 0.8), rgba($color-grey-dark-3, 0.8));
+        z-index: 1000;//To make sure this is on top of every element on the page.
+        transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);//Only animating the scaling of the background. Use the easings.net site to see what values fit best. cubic bezier is basically custom timings for animations.
+
+        @include respond(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }//Fixing background hidden behind pill position for tab-port sizes.
+
+        @include respond(phone) {
+            top: 3.7rem;
+            right: 3.7rem;
+        }//Fixing background pill position for mobile sizes.
+    }
+
+    &__nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1500;//This should be on top of background but behind the button. 
+
+        opacity: 0;
+        width: 0;//opacity and width set to 0 by default to virtually make the nav items not exist when the backgrounf colour isn't spread out.
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);//This caused the width to get a bit larger due to the curve going out of the x-axis. Hence we get that effect of the text going to the right and going back to the left.
+    }
+
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;//Removes Bullets
+        text-align: center;
+        width: 100%;//To prevent list items from moving to sides when closing the nav item by setting width
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            display: inline-block;//To make sure padding is applied properly.
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 1rem 2rem;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);//Here the background size applies to transparent. So when we reduce the position to 100% in the transition it feels as though the transparent background is moving away for the white gradient.
+            background-size: 230%;
+            transition: all .4s;
+
+            span {
+                margin-right: 1rem;
+                display: inline-block;//scss for the numbers in nav
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-primary;
+            transform: translateX(1rem);//Pushes the text to the right a little bit.
+        }
+    }
+
+    //Functionality
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);//Scaling the background color on checkbox click to bring it back to visibilty
+    }
+
+    &__checkbox:checked ~ &__nav {
+        opacity: 1;
+        width: 100%;//Making nav items visible again on checkbox click.
+    }
+
+    //ICON
+    &__icon {
+        position: relative;
+        margin-top: 3.5rem;//Pushing lines down to position it to center of the nav pill
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-grey-dark-3;
+            display: inline-block;
+        }//Here first line is the span and before and after are the other 2 lines of the nav pill.
+
+        &::before,
+        &::after {
+            content: "";//Pseudo classes need to have content property to be defined.
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        //FIXING POSITION
+        &::before {
+            top: -.8rem;//Moves it up
+        }
+
+        &::after {
+            top: .8rem;//Moves it down.
+        }
+    }
+
+    &__button:hover &__icon::before {
+        top: -1rem;
+    }//On button hover we are moving the line up a little
+
+    &__button:hover &__icon::after {
+        top: 1rem;
+    }//On button hover we are moving the line down a little
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;//Making the middle line disappear.
+    } 
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;//Centering element to the pill
+        transform: rotate(135deg);//Rotating in opposite directions compared to the after pseudo class
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;//Centering element to the pill
+        transform: rotate(-135deg);//Rotating in opposite directions compared to the before pseudo class. Calculation here is 180-45 = 135 for a cooler rotation effect.
+    } 
+}
