@@ -1,0 +1,23 @@
+{
+  "name": "anime-website",
+  "version": "1.0.0",
+  "description": "Official website for the GITAM Anime and Manga Club",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "scss": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Missing-Identity/Anime-Manga.git"
+  },
+  "author": "Unmilan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Missing-Identity/Anime-Manga/issues"
+  },
+  "homepage": "https://github.com/Missing-Identity/Anime-Manga#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
