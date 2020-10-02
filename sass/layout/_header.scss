@@ -8,7 +8,7 @@
 
     @include respond(phone) {
         height: 90vh;
-        clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 50% 100%, 0% 80%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 50% 90%, 0% 80%);
     }
 
     &__logo-box {
