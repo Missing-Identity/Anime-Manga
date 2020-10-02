@@ -1,0 +1,43 @@
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);/*Translates in X direction*/
+    }/*Start*/
+
+    80% {
+        transform: translateX(20px);/*This pushes the object further so that when it returns back to normal it looks like its going back*/
+    }/*At 80% of animation*/
+
+    100% {
+        opacity: 1;
+        transform: translate(0);/*Returns back to normal*/
+    }/*Finish*/
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);/*Translates in X direction*/
+    }/*Start*/
+
+    80% {
+        transform: translateX(-20px);/*This pushes the object further so that when it returns back to normal it looks like its going back*/
+    }/*At 80% of animation*/
+
+    100% {
+        opacity: 1;
+        transform: translate(0);/*Returns back to normal*/
+    }/*Finish*/
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }/*Start*/
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }/*Finish*/
+}
