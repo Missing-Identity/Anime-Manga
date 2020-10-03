@@ -566,6 +566,8 @@ body {
         margin-top: 6rem; } }
   @media (max-width: 56.25em) {
     .section-review {
+      background-image: linear-gradient(to right bottom, rgba(255, 119, 48, 0.4), rgba(255, 185, 0, 0.4)), url(../img/Reviews-BG-Mobile.png);
+      background-size: cover;
       padding: 20rem 0; } }
 
 .section-podcast {
@@ -590,4 +592,6 @@ body {
         margin-top: 6rem; } }
   @media (max-width: 56.25em) {
     .section-podcast {
-      padding: 10rem 0; } }
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.7), rgba(86, 67, 250, 0.7)), url(../img/Podcast-BG-Mobile.png);
+      background-size: stretch;
+      padding: 15rem 0; } }
