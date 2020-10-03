@@ -6,7 +6,7 @@
     margin-bottom: 8rem !important;
 
     @include respond(tab-port) {
-        margin-bottom: 5rem !important;
+        margin-bottom: 4rem !important;
     }//Adding a smaller margin for 900px and lower devices to our h2s. This applies throughout the html so its better we do it this way.
 }
 
