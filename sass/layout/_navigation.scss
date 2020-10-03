@@ -59,7 +59,13 @@
 
         opacity: 0;
         width: 0;//opacity and width set to 0 by default to virtually make the nav items not exist when the backgrounf colour isn't spread out.
+        visibility: hidden;
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);//This caused the width to get a bit larger due to the curve going out of the x-axis. Hence we get that effect of the text going to the right and going back to the left.
+
+        @include respond(tab-port) {
+            width: 0;
+            visibility: hidden;
+        }
     }
 
     &__list {
@@ -113,6 +119,7 @@
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;//Making nav items visible again on checkbox click.
+        visibility: visible;
     }
 
     //ICON
