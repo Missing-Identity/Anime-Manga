@@ -4,11 +4,11 @@
     background-size: cover;
     background-position: top;
     position: relative;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85vh, 50vw 100%, 0% 85vh);
 
     @include respond(phone) {
         height: 90vh;
-        clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 50% 90%, 0% 80%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80vh, 50vw 100%, 0% 80vh);
     }
 
     &__logo-box {
@@ -27,5 +27,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+
+        .heading-primary--sub {
+            @include respond(tab-port) {
+                font-size: 2rem;
+            }
+        }
     }
 }
