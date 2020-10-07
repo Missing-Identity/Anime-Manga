@@ -1,0 +1,40 @@
+.start-button {
+    &,
+    &:link,
+    &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 6rem;
+    font-weight: 700;
+    color: $color-white;
+    transition: all .5s;
+    
+    border: none;
+    cursor: pointer;
+    }
+    &:hover {
+        color: $color-insta-2;
+        animation-play-state: paused;
+        transform: scale(1.2);
+    }
+
+    &--animated {
+
+        animation-name: moveTopDownConst;
+        animation-delay: 1.5s;
+        animation-duration: 3.5s;
+        animation-fill-mode: backwards;
+        animation-iteration-count: infinite;
+    }
+
+    &--drop {
+        animation-name: moveInTop;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+    }
+}
