@@ -35,7 +35,7 @@
         position: fixed;//Similar to absolute but stays on the page at that position even if we scroll.
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient(rgba($color-primary-dark, 0.9), rgba($color-grey-dark-3, 0.9));
+        background-image: radial-gradient(rgba($color-primary-dark, 1), rgba($color-grey-dark-3, 1));
         z-index: 1000;//To make sure this is on top of every element on the page.
         transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);//Only animating the scaling of the background. Use the easings.net site to see what values fit best. cubic bezier is basically custom timings for animations.
 
