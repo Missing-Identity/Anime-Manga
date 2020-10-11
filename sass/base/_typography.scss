@@ -20,7 +20,7 @@ body {
         letter-spacing: 3.5rem;
     
         animation-name: moveInLeft;
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-timing-function: ease-out;/*Makes animation seem faster at start and then slower towards the end*/
     
         @include respond (phone) {
@@ -39,7 +39,7 @@ body {
         letter-spacing: 1.8rem;
     
         animation-name: moveInRight;
-        animation-duration: 2s;
+        animation-duration: 1s;
         animation-timing-function: ease-out;
 
         @include respond (phone) {

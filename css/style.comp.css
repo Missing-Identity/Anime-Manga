@@ -69,7 +69,7 @@ body {
     font-weight: 400;
     letter-spacing: 3.5rem;
     animation-name: moveInLeft;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     /*Makes animation seem faster at start and then slower towards the end*/
     /* animation-iteration-count: 2; */
@@ -84,7 +84,7 @@ body {
     font-weight: 300;
     letter-spacing: 1.8rem;
     animation-name: moveInRight;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
@@ -476,7 +476,7 @@ body {
   .header__logo {
     height: 7.5rem;
     animation-name: moveInTop;
-    animation-duration: 3.5s;
+    animation-duration: 2.5s;
     animation-timing-function: ease-out; }
     @media (max-width: 56.25em) {
       .header__logo {
@@ -493,7 +493,7 @@ body {
 
 .header-reviews {
   height: 95vh;
-  background-image: linear-gradient(to bottom, rgba(242, 113, 33, 0.6), rgba(233, 64, 87, 0.6), rgba(138, 35, 135, 0.6)), url("../../img/Reviews-Desktop.jpg");
+  background-image: linear-gradient(to bottom, rgba(242, 113, 33, 0.6), rgba(233, 64, 87, 0.6), rgba(138, 35, 135, 0.6)), url("https://i.ibb.co/HGjPXMJ/Reviews-Desktop.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -501,7 +501,7 @@ body {
   @media (max-width: 56.25em) {
     .header-reviews {
       height: 100vh;
-      background-image: linear-gradient(to bottom, rgba(242, 113, 33, 0.6), rgba(233, 64, 87, 0.6), rgba(138, 35, 135, 0.6)), url("../../img/Reviews-Mobile.jpg");
+      background-image: linear-gradient(to bottom, rgba(242, 113, 33, 0.6), rgba(233, 64, 87, 0.6), rgba(138, 35, 135, 0.6)), url("https://i.ibb.co/k9WFRDD/Reviews-Mobile.jpg");
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%); } }
   .header-reviews__logo-box {
     position: absolute;
@@ -510,7 +510,7 @@ body {
   .header-reviews__logo {
     height: 7.5rem;
     animation-name: moveInTop;
-    animation-duration: 3.5s;
+    animation-duration: 2.5s;
     animation-timing-function: ease-out; }
     @media (max-width: 56.25em) {
       .header-reviews__logo {
@@ -850,7 +850,7 @@ body {
       padding: 5rem 0; } }
 
 .death-note {
-  background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 60%), url("../../img/Death-Note-Desktop.jpg");
+  background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 60%), url("https://i.ibb.co/y6WW8xx/Death-Note-Desktop.jpg");
   background-size: 100%;
   border-radius: 10px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
@@ -858,15 +858,15 @@ body {
   overflow: hidden; }
   @media (max-width: 75em) {
     .death-note {
-      background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 55%, transparent 65%), url("../../img/Death-Note-Desktop.jpg");
+      background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 55%, transparent 65%), url("https://i.ibb.co/y6WW8xx/Death-Note-Desktop.jpg");
       background-size: cover; } }
   @media (max-width: 56.25em) {
     .death-note {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../img/Death-Note-Desktop.jpg");
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%), url("https://i.ibb.co/y6WW8xx/Death-Note-Desktop.jpg");
       background-size: cover; } }
   @media (max-width: 37.5em) {
     .death-note {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%), url("../../img/Death-Note-Mobile.jpg");
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%), url("https://i.ibb.co/YWjrhyz/Death-Note-Mobile.jpg");
       background-size: cover; } }
   .death-note__heading {
     text-transform: uppercase;

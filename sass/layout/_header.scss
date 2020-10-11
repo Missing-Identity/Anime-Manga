@@ -21,7 +21,7 @@
         height: 7.5rem;
 
         animation-name: moveInTop;
-        animation-duration: 3.5s;
+        animation-duration: 2.5s;
         animation-timing-function: ease-out;
 
         @include respond(tab-port) {
@@ -46,7 +46,7 @@
 
 .header-reviews {
     height: 95vh;
-    background-image: linear-gradient(to bottom , rgba($color-wiretap-1, 0.6), rgba($color-wiretap-2, 0.6), rgba($color-wiretap-3, 0.6)), url("../../img/Reviews-Desktop.jpg");
+    background-image: linear-gradient(to bottom , rgba($color-wiretap-1, 0.6), rgba($color-wiretap-2, 0.6), rgba($color-wiretap-3, 0.6)), url("https://i.ibb.co/HGjPXMJ/Reviews-Desktop.jpg");
     background-size: cover;
     background-position: top;
     position: relative;
@@ -54,7 +54,7 @@
 
     @include respond(tab-port) {
         height: 100vh;
-        background-image: linear-gradient(to bottom , rgba($color-wiretap-1, 0.6), rgba($color-wiretap-2, 0.6), rgba($color-wiretap-3, 0.6)), url("../../img/Reviews-Mobile.jpg");;
+        background-image: linear-gradient(to bottom , rgba($color-wiretap-1, 0.6), rgba($color-wiretap-2, 0.6), rgba($color-wiretap-3, 0.6)), url("https://i.ibb.co/k9WFRDD/Reviews-Mobile.jpg");;
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%);
     }
 
@@ -68,7 +68,7 @@
         height: 7.5rem;
 
         animation-name: moveInTop;
-        animation-duration: 3.5s;
+        animation-duration: 2.5s;
         animation-timing-function: ease-out;
 
         @include respond(tab-port) {

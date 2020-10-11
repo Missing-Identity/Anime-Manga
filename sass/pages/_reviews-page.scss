@@ -9,7 +9,7 @@
 }
 
 .death-note {
-    background-image: linear-gradient(105deg ,rgba($color-black, .9) 0%, rgba($color-black, .9) 50%, transparent 60%) ,url("../../img/Death-Note-Desktop.jpg");
+    background-image: linear-gradient(105deg ,rgba($color-black, .9) 0%, rgba($color-black, .9) 50%, transparent 60%) ,url("https://i.ibb.co/y6WW8xx/Death-Note-Desktop.jpg");
     background-size: 100%;//Same as cover.
     border-radius: 10px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
@@ -17,17 +17,17 @@
     overflow: hidden;
 
     @include respond(tab-land) {
-        background-image: linear-gradient(105deg ,rgba($color-black, .9) 0%, rgba($color-black, .9) 55%, transparent 65%) ,url("../../img/Death-Note-Desktop.jpg");//Increasing the white part
+        background-image: linear-gradient(105deg ,rgba($color-black, .9) 0%, rgba($color-black, .9) 55%, transparent 65%) ,url("https://i.ibb.co/y6WW8xx/Death-Note-Desktop.jpg");//Increasing the white part
         background-size: cover;//This is to prevent image repeat.
     }
 
     @include respond(tab-port) {
-        background-image: linear-gradient(to right ,rgba($color-black, .9) 0%, rgba($color-black, .9) 100%) ,url("../../img/Death-Note-Desktop.jpg");
+        background-image: linear-gradient(to right ,rgba($color-black, .9) 0%, rgba($color-black, .9) 100%) ,url("https://i.ibb.co/y6WW8xx/Death-Note-Desktop.jpg");
         background-size: cover;//This is to prevent image repeat.
     }
 
     @include respond(phone) {
-        background-image: linear-gradient(to right ,rgba($color-black, .9) 0%, rgba($color-black, .9) 100%) ,url("../../img/Death-Note-Mobile.jpg");
+        background-image: linear-gradient(to right ,rgba($color-black, .9) 0%, rgba($color-black, .9) 100%) ,url("https://i.ibb.co/YWjrhyz/Death-Note-Mobile.jpg");
         background-size: cover;//This is to prevent image repeat.
     }
 
