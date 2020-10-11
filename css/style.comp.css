@@ -43,7 +43,6 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
   background-color: #000000; }
   @media (max-width: 56.25em) {
     body {
@@ -852,7 +851,7 @@ body {
 .death-note {
   background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 60%), url("https://i.ibb.co/y6WW8xx/Death-Note-Desktop.jpg");
   background-size: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.4);
   padding: 4rem;
   overflow: hidden; }
@@ -871,12 +870,15 @@ body {
   .death-note__heading {
     text-transform: uppercase;
     color: #ffffff;
-    margin-left: 1rem;
-    font-size: 3rem; }
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    width: 50%; }
     @media (max-width: 56.25em) {
       .death-note__heading {
         margin-left: 0;
-        text-align: center; } }
+        text-align: center;
+        width: 100%; } }
   .death-note__para {
     width: 50%;
     font-size: 2rem; }
@@ -905,7 +907,7 @@ body {
 .demon-slayer {
   background-image: linear-gradient(105deg, rgba(193, 205, 173, 0.6) 0%, rgba(193, 205, 173, 0.6) 50%, transparent 60%), url("https://wallpapercave.com/wp/wp4462683.jpg");
   background-size: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   padding: 4rem;
   overflow: hidden; }
@@ -924,12 +926,15 @@ body {
   .demon-slayer__heading {
     text-transform: uppercase;
     color: #800015;
-    margin-left: 14.5rem;
-    font-size: 3rem; }
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    width: 50%; }
     @media (max-width: 56.25em) {
       .demon-slayer__heading {
         margin-left: 0;
-        text-align: center; } }
+        text-align: center;
+        width: 100%; } }
   .demon-slayer__para {
     width: 50%;
     font-size: 2rem;
@@ -948,3 +953,60 @@ body {
         text-align: center; } }
     .demon-slayer__btn .btn--custom {
       color: #800015; }
+
+.section-erased-rev {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right top, #D38312 0%, #b21f1f 20%, #000000 65%); }
+  @media (max-width: 37.5em) {
+    .section-erased-rev {
+      padding: 10rem 0; } }
+
+.erased {
+  background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 50%, transparent 60%), url("https://i.ibb.co/RgNQ4Lv/Erased-Desktop.png");
+  background-size: 100%;
+  border-radius: 20px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  padding: 4rem;
+  overflow: hidden; }
+  @media (max-width: 75em) {
+    .erased {
+      background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 55%, transparent 65%), url("https://i.ibb.co/RgNQ4Lv/Erased-Desktop.png");
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .erased {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url("https://i.ibb.co/RgNQ4Lv/Erased-Desktop.png");
+      background-size: cover; } }
+  @media (max-width: 37.5em) {
+    .erased {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://i.ibb.co/d7YjW5D/Erased-Mobile.png");
+      background-size: cover; } }
+  .erased__heading {
+    text-transform: uppercase;
+    color: #D38312;
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    width: 50%; }
+    @media (max-width: 56.25em) {
+      .erased__heading {
+        margin-left: 0;
+        text-align: center;
+        width: 100%; } }
+  .erased__para {
+    width: 50%;
+    font-size: 2rem;
+    color: #ffffff; }
+    @media (max-width: 56.25em) {
+      .erased__para {
+        width: 100%;
+        padding: 2rem;
+        text-align: center; } }
+  .erased__btn {
+    margin-left: 15rem; }
+    @media (max-width: 56.25em) {
+      .erased__btn {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center; } }
+    .erased__btn .btn--custom {
+      color: #D38312; }

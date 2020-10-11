@@ -1,15 +1,15 @@
-//DEMON-SLAYER-SECTION
-.section-demon-slayer-rev {
+//ERASED-SECTION
+.section-erased-rev {
     padding: 15rem 0;
-    background-image: linear-gradient(105deg, $color-grey-light-1, $color-demon-slayer-3);
+    background-image: linear-gradient(to right top, $color-erased-2 0%, $color-erased-1 20%, $color-black 65%);
 
     @include respond(phone) {
         padding: 10rem 0;
     }
 }
 
-.demon-slayer {
-    background-image: linear-gradient(105deg ,rgba($color-demon-slayer-1, .6) 0%, rgba($color-demon-slayer-1, .6) 50%, transparent 60%) ,url("https://wallpapercave.com/wp/wp4462683.jpg");
+.erased {
+    background-image: linear-gradient(105deg ,rgba($color-black, .8) 0%, rgba($color-black, .8) 50%, transparent 60%) ,url("https://i.ibb.co/RgNQ4Lv/Erased-Desktop.png");
     background-size: 100%;//Same as cover.
     border-radius: 20px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
@@ -17,23 +17,23 @@
     overflow: hidden;
 
     @include respond(tab-land) {
-        background-image: linear-gradient(105deg ,rgba($color-demon-slayer-1, .6) 0%, rgba($color-demon-slayer-1, .6) 55%, transparent 65%) ,url("https://wallpapercave.com/wp/wp4462683.jpg");//Increasing the white part
+        background-image: linear-gradient(105deg ,rgba($color-black, .8) 0%, rgba($color-black, .8) 55%, transparent 65%) ,url("https://i.ibb.co/RgNQ4Lv/Erased-Desktop.png");//Increasing the white part
         background-size: cover;//This is to prevent image repeat.
     }
 
     @include respond(tab-port) {
-        background-image: linear-gradient(to right ,rgba($color-demon-slayer-1, .6) 0%, rgba($color-demon-slayer-1, .6) 100%) ,url("https://wallpapercave.com/wp/wp4884808.jpg");
+        background-image: linear-gradient(to right ,rgba($color-black, .8) 0%, rgba($color-black, .8) 100%) ,url("https://i.ibb.co/RgNQ4Lv/Erased-Desktop.png");
         background-size: cover;//This is to prevent image repeat.
     }
 
     @include respond(phone) {
-        background-image: linear-gradient(to right ,rgba($color-demon-slayer-1, .6) 0%, rgba($color-demon-slayer-1, .6) 100%) ,url("https://wallpapercave.com/wp/wp4884808.jpg");
+        background-image: linear-gradient(to right ,rgba($color-black, .6) 0%, rgba($color-black, .6) 100%) ,url("https://i.ibb.co/d7YjW5D/Erased-Mobile.png");
         background-size: cover;//This is to prevent image repeat.
     }
 
     &__heading {
         text-transform: uppercase;
-        color: $color-demon-slayer-4;
+        color: $color-erased-2;
         margin-top: 3rem;
         font-size: 3rem;
         text-align: center;
@@ -49,7 +49,7 @@
     &__para {
         width: 50%;
         font-size: 2rem;
-        color: $color-black;
+        color: $color-white;
 
         @include respond(tab-port) {
             width: 100%;
@@ -68,7 +68,7 @@
         }
 
         .btn--custom {
-            color: $color-demon-slayer-4;
+            color: $color-erased-2;
         }
     }
 }

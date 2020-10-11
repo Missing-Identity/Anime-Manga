@@ -11,7 +11,7 @@
 .death-note {
     background-image: linear-gradient(105deg ,rgba($color-black, .9) 0%, rgba($color-black, .9) 50%, transparent 60%) ,url("https://i.ibb.co/y6WW8xx/Death-Note-Desktop.jpg");
     background-size: 100%;//Same as cover.
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 1.5rem 4rem rgba($color-white, .4);
     padding: 4rem;
     overflow: hidden;
@@ -34,12 +34,15 @@
     &__heading {
         text-transform: uppercase;
         color: $color-white;
-        margin-left: 1rem;
+        margin-top: 3rem;
         font-size: 3rem;
+        text-align: center;
+        width: 50%;
 
         @include respond(tab-port) {
             margin-left: 0;
             text-align: center;
+            width: 100%;
         }
     }
 
@@ -63,7 +66,7 @@
             text-align: center;
         }
 
-        .btn--death-note {
+        .btn--custom {
             color: $color-black;
         }
     }
