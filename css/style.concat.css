@@ -1742,13 +1742,13 @@ body {
   background-color: #000000; }
   @media (max-width: 37.5em) {
     .section-death-note-rev {
-      padding: 5rem 0; } }
+      padding: 10rem 0; } }
 
 .death-note {
   background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 60%), url("https://i.ibb.co/y6WW8xx/Death-Note-Desktop.jpg");
   background-size: 100%;
   border-radius: 10px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.4);
   padding: 4rem;
   overflow: hidden; }
   @media (max-width: 75em) {
@@ -1766,7 +1766,7 @@ body {
   .death-note__heading {
     text-transform: uppercase;
     color: #ffffff;
-    margin-left: 15rem;
+    margin-left: 1rem;
     font-size: 3rem; }
     @media (max-width: 56.25em) {
       .death-note__heading {
@@ -1788,4 +1788,58 @@ body {
         margin-left: 0;
         text-align: center; } }
     .death-note__btn .btn--custom {
+      color: #000000; }
+
+.section-demon-slayer-rev {
+  padding: 15rem 0;
+  background-image: linear-gradient(105deg, #f7f7f7, #4d88ff); }
+  @media (max-width: 37.5em) {
+    .section-demon-slayer-rev {
+      padding: 10rem 0; } }
+
+.demon-slayer {
+  background-image: linear-gradient(105deg, rgba(193, 205, 173, 0.6) 0%, rgba(193, 205, 173, 0.6) 50%, transparent 60%), url("https://wallpapercave.com/wp/wp4462683.jpg");
+  background-size: 100%;
+  border-radius: 10px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  padding: 4rem;
+  overflow: hidden; }
+  @media (max-width: 75em) {
+    .demon-slayer {
+      background-image: linear-gradient(105deg, rgba(193, 205, 173, 0.6) 0%, rgba(193, 205, 173, 0.6) 55%, transparent 65%), url("https://wallpapercave.com/wp/wp4462683.jpg");
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .demon-slayer {
+      background-image: linear-gradient(to right, rgba(193, 205, 173, 0.6) 0%, rgba(193, 205, 173, 0.6) 100%), url("https://wallpapercave.com/wp/wp4462683.jpg");
+      background-size: cover; } }
+  @media (max-width: 37.5em) {
+    .demon-slayer {
+      background-image: linear-gradient(to right, rgba(193, 205, 173, 0.6) 0%, rgba(193, 205, 173, 0.6) 100%), url("https://wallpapercave.com/wp/wp4884808.jpg");
+      background-size: cover; } }
+  .demon-slayer__heading {
+    text-transform: uppercase;
+    color: #800015;
+    margin-left: 14.5rem;
+    font-size: 3rem; }
+    @media (max-width: 56.25em) {
+      .demon-slayer__heading {
+        margin-left: 0;
+        text-align: center; } }
+  .demon-slayer__para {
+    width: 50%;
+    font-size: 2rem;
+    color: #000000; }
+    @media (max-width: 56.25em) {
+      .demon-slayer__para {
+        width: 100%;
+        padding: 2rem;
+        text-align: center; } }
+  .demon-slayer__btn {
+    margin-left: 15rem; }
+    @media (max-width: 56.25em) {
+      .demon-slayer__btn {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center; } }
+    .demon-slayer__btn .btn--custom {
       color: #000000; }
