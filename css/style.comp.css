@@ -1067,3 +1067,60 @@ body {
         text-align: center; } }
     .dororo__btn .btn--custom {
       color: #fd1d1d; }
+
+.section-charlotte-rev {
+  padding: 15rem 0;
+  background-image: linear-gradient(#0f0c29, #302b63); }
+  @media (max-width: 37.5em) {
+    .section-charlotte-rev {
+      padding: 10rem 0; } }
+
+.charlotte {
+  background-image: linear-gradient(105deg, rgba(54, 55, 149, 0.8) 0%, rgba(54, 55, 149, 0.8) 40%, transparent 80%), url("https://images4.alphacoders.com/628/thumb-1920-628927.png");
+  background-size: 100%;
+  border-radius: 20px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  padding: 4rem;
+  overflow: hidden; }
+  @media (max-width: 75em) {
+    .charlotte {
+      background-image: linear-gradient(105deg, rgba(54, 55, 149, 0.8) 0%, rgba(54, 55, 149, 0.8) 45%, transparent 75%), url("https://images4.alphacoders.com/628/thumb-1920-628927.png");
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .charlotte {
+      background-image: linear-gradient(to right, rgba(54, 55, 149, 0.7) 0%, rgba(54, 55, 149, 0.7) 100%), url("https://images4.alphacoders.com/628/thumb-1920-628927.png");
+      background-size: cover; } }
+  @media (max-width: 37.5em) {
+    .charlotte {
+      background-image: linear-gradient(to right, rgba(54, 55, 149, 0.6) 0%, rgba(54, 55, 149, 0.6) 100%), url("https://wallpapercave.com/wp/wp3853929.jpg");
+      background-size: cover; } }
+  .charlotte__heading {
+    text-transform: uppercase;
+    color: #ead173;
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    width: 50%; }
+    @media (max-width: 56.25em) {
+      .charlotte__heading {
+        margin-left: 0;
+        text-align: center;
+        width: 100%; } }
+  .charlotte__para {
+    width: 50%;
+    font-size: 2rem;
+    color: #ffffff; }
+    @media (max-width: 56.25em) {
+      .charlotte__para {
+        width: 100%;
+        padding: 2rem;
+        text-align: center; } }
+  .charlotte__btn {
+    margin-left: 15rem; }
+    @media (max-width: 56.25em) {
+      .charlotte__btn {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center; } }
+    .charlotte__btn .btn--custom {
+      color: #0f0c29; }
