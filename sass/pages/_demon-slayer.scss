@@ -1,0 +1,71 @@
+//DEMON-SLAYER-SECTION
+.section-demon-slayer-rev {
+    padding: 15rem 0;
+    background-image: linear-gradient(105deg, $color-grey-light-1, $color-demon-slayer-3);
+
+    @include respond(phone) {
+        padding: 10rem 0;
+    }
+}
+
+.demon-slayer {
+    background-image: linear-gradient(105deg ,rgba($color-demon-slayer-1, .6) 0%, rgba($color-demon-slayer-1, .6) 50%, transparent 60%) ,url("https://wallpapercave.com/wp/wp4462683.jpg");
+    background-size: 100%;//Same as cover.
+    border-radius: 10px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    padding: 4rem;
+    overflow: hidden;
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(105deg ,rgba($color-demon-slayer-1, .6) 0%, rgba($color-demon-slayer-1, .6) 55%, transparent 65%) ,url("https://wallpapercave.com/wp/wp4462683.jpg");//Increasing the white part
+        background-size: cover;//This is to prevent image repeat.
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right ,rgba($color-demon-slayer-1, .6) 0%, rgba($color-demon-slayer-1, .6) 100%) ,url("https://wallpapercave.com/wp/wp4884808.jpg");
+        background-size: cover;//This is to prevent image repeat.
+    }
+
+    @include respond(phone) {
+        background-image: linear-gradient(to right ,rgba($color-demon-slayer-1, .6) 0%, rgba($color-demon-slayer-1, .6) 100%) ,url("https://wallpapercave.com/wp/wp4884808.jpg");
+        background-size: cover;//This is to prevent image repeat.
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        color: $color-demon-slayer-4;
+        margin-left: 14.5rem;
+        font-size: 3rem;
+
+        @include respond(tab-port) {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+    &__para {
+        width: 50%;
+        font-size: 2rem;
+        color: $color-black;
+
+        @include respond(tab-port) {
+            width: 100%;
+            padding: 2rem;
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        margin-left: 15rem;
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .btn--custom {
+            color: $color-demon-slayer-4;
+        }
+    }
+}
