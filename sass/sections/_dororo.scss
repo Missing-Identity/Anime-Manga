@@ -2,7 +2,7 @@
 .section-dororo-rev {
     padding: 15rem 0;
     background-image: radial-gradient($color-dororo-1 0%, $color-dororo-1 80%, $color-black 99%);
-    display: block;
+    display: none;
 
     @include respond(phone) {
         padding: 10rem 0;

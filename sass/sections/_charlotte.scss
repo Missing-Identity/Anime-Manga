@@ -2,7 +2,7 @@
 .section-charlotte-rev {
     padding: 15rem 0;
     background-image: linear-gradient($color-charlotte-1, $color-charlotte-2);
-    display: block;
+    display: none;
 
     @include respond(phone) {
         padding: 10rem 0;

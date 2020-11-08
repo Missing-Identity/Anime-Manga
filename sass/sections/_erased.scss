@@ -2,7 +2,7 @@
 .section-erased-rev {
     padding: 15rem 0;
     background-image: linear-gradient(to right top, $color-erased-2 0%, $color-erased-1 20%, $color-black 65%);
-    display: block;
+    display: none;
 
     @include respond(phone) {
         padding: 10rem 0;
