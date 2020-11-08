@@ -1312,6 +1312,69 @@ body {
   animation-delay: 1s;
   animation-fill-mode: backwards; }
 
+.popup__death-note {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+  -webkit-overflow: hidden;
+  overflow: hidden; }
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup__death-note {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3); } }
+  .popup__death-note--content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: #ffffff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .5s .2s; }
+    @media (max-width: 56.25em) {
+      .popup__death-note--content {
+        width: 100%;
+        text-align: center; } }
+  .popup__death-note embed {
+    width: 40rem;
+    height: 50rem;
+    position: relative;
+    left: 28rem; }
+    @media (max-width: 56.25em) {
+      .popup__death-note embed {
+        left: 0; } }
+  .popup__death-note:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup__death-note:target .popup__death-note__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__death-note--close:link, .popup__death-note--close:visited {
+    color: #777777;
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    line-height: 1;
+    font-size: 3rem; }
+  .popup__death-note--close:hover {
+    color: #7F8C8D; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }

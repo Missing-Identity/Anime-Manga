@@ -41,12 +41,30 @@
         }
     }
 
-    &--green {
-        background-color: $color-primary;
+    &--blue {
+        background-color: $color-tertiary-dark;
         color: $color-white;
 
         &::after {
-            background-color: $color-primary;
+            background-color: $color-tertiary-dark;
+        }
+    }
+
+    &--green {
+        background-color: $color-dark-green;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-dark-green;
+        }
+    }
+
+    &--yellow {
+        background-color: $color-secondary-light;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-secondary-light;
         }
     }
 

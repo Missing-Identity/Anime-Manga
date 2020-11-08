@@ -52,7 +52,18 @@
 
         <main>
 
-            <section class="section-death-note-rev" id="starting-review">
+            <section class="section-search-bar">
+
+                <form action="/reviews.html">
+                    <input type="text" id="search-anime" name="Search" class="search-anime" placeholder="Search"><br>
+
+                    <a href="home.html" class="btn btn--blue btn__animated cancel-btn" id="cancelbutton">View All</a>
+                    <button class="btn btn--green btn__animated search-btn" id="searchbutton" type="button">Search</button>
+                </form>
+
+            </section>
+
+            <section class="section-death-note-rev section-visibility" id="death-note-review">
                 <div class="row">
                     <div class="death-note">
                         <div class="death-note__content">
@@ -67,14 +78,14 @@
                                 </p>
                             </div>
                             <div class="u-margin-bottom-big death-note__btn">
-                                <a href="#" class="btn btn--white btn--custom">Read Full Review</a>
+                                <a href="#popup__death-note" class="btn btn--white btn--custom">Read Full Review</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section-demon-slayer-rev">
+            <section class="section-demon-slayer-rev section-visibility" id="demon-slayer-review">
                 <div class="row">
                     <div class="demon-slayer">
                         <div class="demon-slayer__content">
@@ -96,7 +107,7 @@
                 </div>
             </section>
 
-            <section class="section-erased-rev">
+            <section class="section-erased-rev section-visibility" id="erased-review">
                 <div class="row">
                     <div class="erased">
                         <div class="erased__content">
@@ -118,7 +129,7 @@
                 </div>
             </section>
 
-            <section class="section-dororo-rev">
+            <section class="section-dororo-rev section-visibility" id="dororo-review">
                 <div class="row">
                     <div class="dororo">
                         <div class="dororo__content">
@@ -140,7 +151,7 @@
                 </div>
             </section>
 
-            <section class="section-charlotte-rev">
+            <section class="section-charlotte-rev section-visibility" id="charlotte-review">
                 <div class="row">
                     <div class="charlotte">
                         <div class="charlotte__content">
@@ -164,5 +175,6 @@
 
         </main>
 
+        <script src="script.js"></script>
     </body>
 </html>

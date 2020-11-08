@@ -1,0 +1,42 @@
+.section-search-bar {
+    text-align: center;
+    background-image: linear-gradient(to right bottom, $color-insta-3, $color-secondary-dark);
+    margin-top: -10rem;
+    padding: 10rem;
+    padding-top: 18rem;
+
+    .btn {
+        margin: 2rem;
+    }
+
+    .search-anime {
+        width: 85%;
+        height: 5rem;
+        border-radius: 20px;
+        font-size: 4rem;
+        font-family: inherit;
+        background-color: $color-white;
+        border: none;
+        padding: 2rem 2rem;
+        border: 5px solid transparent;
+        transition: all .3s;
+        margin-bottom: 5rem;
+
+        @include respond(tab-port){
+            border-radius: 10px;
+            font-size: 3rem;
+            height: 4rem;
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            border: 5px solid $color-light-green;
+        }
+
+        &:focus:invalid {
+            border-bottom: 5px solid $color-insta-2;
+        }
+
+    }
+}

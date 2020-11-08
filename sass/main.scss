@@ -9,10 +9,18 @@
 @import "components/button";//Imports all our button styles.
 @import "components/composition";
 @import "components/start-button";//Importing starting button styling.
+@import "components/popups";//Importing popups scss.
 
 @import "layout/grid";//Importing grid scss.
 @import "layout/header";//Importing header scss.
 @import "layout/navigation";//Import navigation scss.
 
 @import "pages/home";//Importing main home scss
-@import "pages/reviews-page";//Importing review page scss.
+
+//Importing sections in reviews page:-
+@import "sections/search-bar";
+@import "sections/death-note";
+@import "sections/demon-slayer";
+@import "sections/dororo";
+@import "sections/erased";
+@import "sections/charlotte";
