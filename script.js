@@ -3,6 +3,7 @@ var demonSlayerSection = document.querySelector('#demon-slayer-review');
 var dororoSection = document.querySelector('#dororo-review');
 var charlotteSection = document.querySelector('#charlotte-review');
 var erasedSection = document.querySelector('#erased-review');
+var initialDSection = document.querySelector("#initial-d-review");
 var searchBar = document.querySelector('form');
 var search = document.querySelector('#searchbutton');
 var viewAll = document.querySelector('#viewbutton');
@@ -35,6 +36,10 @@ search.addEventListener('click', function(){
     else if (name.value.toUpperCase().trim() == "DORORO") {
         console.log("Dororo searched!");
         dororoSection.style.display = "block";
+    }
+    else if (name.value.toUpperCase().trim() == "INITIAL D" || name.value.toUpperCase().trim() == "INITIAL-D" || name.value.toUpperCase().trim() == "INTIALD") {
+        console.log("Initial-D searched!");
+        initialDSection.style.display = "block";
     }
 });
 
