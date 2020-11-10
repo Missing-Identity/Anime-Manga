@@ -10,7 +10,7 @@
 }
 
 .initial-d {
-    background-image: linear-gradient(105deg ,rgba($color-white, .8) 0%, rgba($color-white, .8) 45%,transparent 80%) ,url(../../img/Initial-D-Desktop.jpg);
+    background-image: linear-gradient(105deg ,rgba($color-white, .8) 0%, rgba($color-white, .8) 45%,transparent 80%) ,url("https://i.ibb.co/Lkn6PTv/Initial-D-Desktop.jpg");
     background-size: 100%;//Same as cover.
     border-radius: 20px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
@@ -18,17 +18,17 @@
     overflow: hidden;
 
     @include respond(tab-land) {
-        background-image: linear-gradient(105deg ,rgba($color-white, .8) 0%, rgba($color-white, .8) 45%, transparent 75%) ,url("/img/Initial-D-Desktop.jpg");//Increasing the white part
+        background-image: linear-gradient(105deg ,rgba($color-white, .8) 0%, rgba($color-white, .8) 45%, transparent 75%) ,url("https://i.ibb.co/Lkn6PTv/Initial-D-Desktop.jpg");//Increasing the white part
         background-size: cover;//This is to prevent image repeat.
     }
 
     @include respond(tab-port) {
-        background-image: linear-gradient(to right ,rgba($color-white, .8) 0%, rgba($color-white, .8) 100%) ,url("/img/Initial-D-Mobile.jpg");
+        background-image: linear-gradient(to right ,rgba($color-white, .8) 0%, rgba($color-white, .8) 100%) ,url("https://i.ibb.co/vJJ62wP/Initial-D-Mobile.jpg");
         background-size: cover;//This is to prevent image repeat.
     }
 
     @include respond(phone) {
-        background-image: linear-gradient(to right ,rgba($color-white, .8) 0%, rgba($color-white, .8) 100%) ,url("/img/Initial-D-Mobile.jpg");
+        background-image: linear-gradient(to right ,rgba($color-white, .8) 0%, rgba($color-white, .8) 100%) ,url("https://i.ibb.co/vJJ62wP/Initial-D-Mobile.jpg");
         background-size: cover;//This is to prevent image repeat.
     }
 

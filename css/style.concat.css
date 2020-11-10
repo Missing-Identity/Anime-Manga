@@ -2132,7 +2132,7 @@ body {
       padding: 10rem 0; } }
 
 .initial-d {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 45%, transparent 80%), url(../../img/Initial-D-Desktop.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 45%, transparent 80%), url("https://i.ibb.co/Lkn6PTv/Initial-D-Desktop.jpg");
   background-size: 100%;
   border-radius: 20px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -2140,15 +2140,15 @@ body {
   overflow: hidden; }
   @media (max-width: 75em) {
     .initial-d {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 45%, transparent 75%), url("/img/Initial-D-Desktop.jpg");
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 45%, transparent 75%), url("https://i.ibb.co/Lkn6PTv/Initial-D-Desktop.jpg");
       background-size: cover; } }
   @media (max-width: 56.25em) {
     .initial-d {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("/img/Initial-D-Mobile.jpg");
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("https://i.ibb.co/vJJ62wP/Initial-D-Mobile.jpg");
       background-size: cover; } }
   @media (max-width: 37.5em) {
     .initial-d {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("/img/Initial-D-Mobile.jpg");
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("https://i.ibb.co/vJJ62wP/Initial-D-Mobile.jpg");
       background-size: cover; } }
   .initial-d__heading {
     text-transform: uppercase;
@@ -2180,3 +2180,119 @@ body {
         text-align: center; } }
     .initial-d__btn .btn--custom {
       color: #fd1d1d; }
+
+.section-orv-rev {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #2C3E50, #FD746C);
+  display: none; }
+  @media (max-width: 37.5em) {
+    .section-orv-rev {
+      padding: 10rem 0; } }
+
+.orv {
+  background-image: linear-gradient(105deg, rgba(44, 62, 80, 0.8) 0%, rgba(44, 62, 80, 0.8) 45%, transparent 80%), url("https://i.ibb.co/RjnBXFK/O-R-V-Desktop.jpg");
+  background-size: 100%;
+  border-radius: 20px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  padding: 4rem;
+  overflow: hidden; }
+  @media (max-width: 75em) {
+    .orv {
+      background-image: linear-gradient(105deg, rgba(44, 62, 80, 0.8) 0%, rgba(44, 62, 80, 0.8) 45%, transparent 75%), url("https://i.ibb.co/RjnBXFK/O-R-V-Desktop.jpg");
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .orv {
+      background-image: linear-gradient(to right, rgba(44, 62, 80, 0.8) 0%, rgba(44, 62, 80, 0.8) 100%), url("https://i.ibb.co/ZLnd1m0/O-R-V-Mobile.jpg");
+      background-size: cover; } }
+  @media (max-width: 37.5em) {
+    .orv {
+      background-image: linear-gradient(to right, rgba(44, 62, 80, 0.8) 0%, rgba(44, 62, 80, 0.8) 100%), url("https://i.ibb.co/ZLnd1m0/O-R-V-Mobile.jpg");
+      background-size: cover; } }
+  .orv__heading {
+    text-transform: uppercase;
+    color: #FD746C;
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    width: 50%; }
+    @media (max-width: 56.25em) {
+      .orv__heading {
+        margin-left: 0;
+        text-align: center;
+        width: 100%; } }
+  .orv__para {
+    width: 50%;
+    font-size: 2rem;
+    color: #ffffff; }
+    @media (max-width: 56.25em) {
+      .orv__para {
+        width: 100%;
+        padding: 2rem;
+        text-align: center; } }
+  .orv__btn {
+    margin-left: 15rem; }
+    @media (max-width: 56.25em) {
+      .orv__btn {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center; } }
+    .orv__btn .btn--custom {
+      color: #FD746C; }
+
+.section-tasogare-rev {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #3a6186, #89253e);
+  display: none; }
+  @media (max-width: 37.5em) {
+    .section-tasogare-rev {
+      padding: 10rem 0; } }
+
+.tasogare {
+  background-image: linear-gradient(105deg, rgba(58, 97, 134, 0.8) 0%, rgba(58, 97, 134, 0.8) 45%, transparent 80%), url("https://i.ibb.co/19bvVLG/Tasogare-Desktop.jpg");
+  background-size: 100%;
+  border-radius: 20px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  padding: 4rem;
+  overflow: hidden; }
+  @media (max-width: 75em) {
+    .tasogare {
+      background-image: linear-gradient(105deg, rgba(58, 97, 134, 0.8) 0%, rgba(58, 97, 134, 0.8) 45%, transparent 75%), url("https://i.ibb.co/19bvVLG/Tasogare-Desktop.jpg");
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .tasogare {
+      background-image: linear-gradient(to right, rgba(58, 97, 134, 0.8) 0%, rgba(58, 97, 134, 0.8) 100%), url("https://i.ibb.co/5rJhDkM/Tasogare-Mobile.jpg");
+      background-size: cover; } }
+  @media (max-width: 37.5em) {
+    .tasogare {
+      background-image: linear-gradient(to right, rgba(58, 97, 134, 0.8) 0%, rgba(58, 97, 134, 0.8) 100%), url("https://i.ibb.co/5rJhDkM/Tasogare-Mobile.jpg");
+      background-size: cover; } }
+  .tasogare__heading {
+    text-transform: uppercase;
+    color: #FD746C;
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+    width: 50%; }
+    @media (max-width: 56.25em) {
+      .tasogare__heading {
+        margin-left: 0;
+        text-align: center;
+        width: 100%; } }
+  .tasogare__para {
+    width: 50%;
+    font-size: 2rem;
+    color: #ffffff; }
+    @media (max-width: 56.25em) {
+      .tasogare__para {
+        width: 100%;
+        padding: 2rem;
+        text-align: center; } }
+  .tasogare__btn {
+    margin-left: 15rem; }
+    @media (max-width: 56.25em) {
+      .tasogare__btn {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center; } }
+    .tasogare__btn .btn--custom {
+      color: #89253e; }

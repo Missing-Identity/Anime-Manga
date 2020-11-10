@@ -10,7 +10,7 @@
 }
 
 .tasogare {
-    background-image: linear-gradient(105deg ,rgba($color-tasogare-1, .8) 0%, rgba($color-tasogare-1, .8) 45%,transparent 80%) ,url(../../img/Tasogare-Desktop.jpg);
+    background-image: linear-gradient(105deg ,rgba($color-tasogare-1, .8) 0%, rgba($color-tasogare-1, .8) 45%,transparent 80%) ,url("https://i.ibb.co/19bvVLG/Tasogare-Desktop.jpg");
     background-size: 100%;//Same as cover.
     border-radius: 20px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
@@ -18,17 +18,17 @@
     overflow: hidden;
 
     @include respond(tab-land) {
-        background-image: linear-gradient(105deg ,rgba($color-tasogare-1, .8) 0%, rgba($color-tasogare-1, .8) 45%, transparent 75%) ,url(../../img/Tasogare-Desktop.jpg);//Increasing the white part
+        background-image: linear-gradient(105deg ,rgba($color-tasogare-1, .8) 0%, rgba($color-tasogare-1, .8) 45%, transparent 75%) ,url("https://i.ibb.co/19bvVLG/Tasogare-Desktop.jpg");//Increasing the white part
         background-size: cover;//This is to prevent image repeat.
     }
 
     @include respond(tab-port) {
-        background-image: linear-gradient(to right ,rgba($color-tasogare-1, .8) 0%, rgba($color-tasogare-1, .8) 100%) ,url(../../img/Tasogare-Mobile.jpg);
+        background-image: linear-gradient(to right ,rgba($color-tasogare-1, .8) 0%, rgba($color-tasogare-1, .8) 100%) ,url("https://i.ibb.co/5rJhDkM/Tasogare-Mobile.jpg");
         background-size: cover;//This is to prevent image repeat.
     }
 
     @include respond(phone) {
-        background-image: linear-gradient(to right ,rgba($color-tasogare-1, .8) 0%, rgba($color-tasogare-1, .8) 100%) ,url(../../img/Tasogare-Mobile.jpg);
+        background-image: linear-gradient(to right ,rgba($color-tasogare-1, .8) 0%, rgba($color-tasogare-1, .8) 100%) ,url("https://i.ibb.co/5rJhDkM/Tasogare-Mobile.jpg");
         background-size: cover;//This is to prevent image repeat.
     }
 
