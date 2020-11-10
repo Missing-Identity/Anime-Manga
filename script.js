@@ -4,6 +4,7 @@ var dororoSection = document.querySelector('#dororo-review');
 var charlotteSection = document.querySelector('#charlotte-review');
 var erasedSection = document.querySelector('#erased-review');
 var initialDSection = document.querySelector("#initial-d-review");
+var orvSection = document.querySelector('#orv-review');
 var searchBar = document.querySelector('form');
 var search = document.querySelector('#searchbutton');
 var viewAll = document.querySelector('#viewbutton');
@@ -37,9 +38,16 @@ search.addEventListener('click', function(){
         console.log("Dororo searched!");
         dororoSection.style.display = "block";
     }
-    else if (name.value.toUpperCase().trim() == "INITIAL D" || name.value.toUpperCase().trim() == "INITIAL-D" || name.value.toUpperCase().trim() == "INTIALD") {
+    else if (name.value.toUpperCase().trim() == "INITIAL D" || name.value.toUpperCase().trim() == "INITIAL-D" || name.value.toUpperCase().trim() == "INITIALD") {
         console.log("Initial-D searched!");
         initialDSection.style.display = "block";
+    }
+    else if (name.value.toUpperCase().trim() == "ORV" || name.value.toUpperCase().trim() == "O.R.V" || name.value.toUpperCase().trim() == "O.R.V." || name.value.toUpperCase().trim() == "OMNISCIENT READER'S VIEWPOINT" || name.value.toUpperCase().trim() == "OMNISCIENT READERS VIEWPOINT" || name.value.toUpperCase().trim() == "OMNISCIENTREADER'SVIEWPOINT" || name.value.toUpperCase().trim() == "OMNISCIENTREADERSVIEWPOINT" || name.value.toUpperCase().trim() == "O R V"){
+        console.log("O.R.V searched");
+        orvSection.style.display = "block";
+    }
+    else {
+        console.log("Invalid name searched!");
     }
 });
 
