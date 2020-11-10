@@ -5,6 +5,7 @@ var charlotteSection = document.querySelector('#charlotte-review');
 var erasedSection = document.querySelector('#erased-review');
 var initialDSection = document.querySelector("#initial-d-review");
 var orvSection = document.querySelector('#orv-review');
+var tasogareSection = document.querySelector('#tasogare-review');
 var searchBar = document.querySelector('form');
 var search = document.querySelector('#searchbutton');
 var viewAll = document.querySelector('#viewbutton');
@@ -45,6 +46,10 @@ search.addEventListener('click', function(){
     else if (name.value.toUpperCase().trim() == "ORV" || name.value.toUpperCase().trim() == "O.R.V" || name.value.toUpperCase().trim() == "O.R.V." || name.value.toUpperCase().trim() == "OMNISCIENT READER'S VIEWPOINT" || name.value.toUpperCase().trim() == "OMNISCIENT READERS VIEWPOINT" || name.value.toUpperCase().trim() == "OMNISCIENTREADER'SVIEWPOINT" || name.value.toUpperCase().trim() == "OMNISCIENTREADERSVIEWPOINT" || name.value.toUpperCase().trim() == "O R V"){
         console.log("O.R.V searched");
         orvSection.style.display = "block";
+    }
+    else if (name.value.toUpperCase().trim() == "TASOGARE OTOME X AMNESIA" || name.value.toUpperCase().trim() == "TASOGAREOTOMEXAMNESIA" || name.value.toUpperCase().trim() == "TASOGARE OTOME AMNESIA" || name.value.toUpperCase().trim() == "TASOGAREOTOMEAMNESIA" || name.value.toUpperCase().trim() == "DUSK MAIDEN OF AMNESIA" || name.value.toUpperCase().trim() == "DUSKMAIDENOFAMNESIA" || name.value.toUpperCase().trim() == "TASOGARE" || name.value.toUpperCase().trim() == "DUSK MAIDEN") {
+        console.log("Tasogare searched");
+        tasogareSection.style.display = "block";
     }
     else {
         console.log("Invalid name searched!");
