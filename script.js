@@ -43,7 +43,7 @@ search.addEventListener('click', function(){
         console.log("Searched Demon Slayer!");
         demonSlayerSection.style.display = "block";
     }
-    else if (name.value.toUpperCase().trim() == "ERASED") {
+    else if (name.value.toUpperCase().trim() == "ERASED" || name.value.toUpperCase().trim() == "BOKU DAKE GA INAI MACHI") {
         console.log("Erased searched!");
         erasedSection.style.display = "block";
     }
