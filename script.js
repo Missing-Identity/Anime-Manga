@@ -13,10 +13,11 @@ var visibility = document.querySelectorAll('.section-visibility');
 var imgVisibility = document.querySelectorAll('.img-visibility');
 var featuredReview = document.querySelector('#featured-review');
 
-var deathNoteButton = document.querySelector('#death-note-full');
+var deathNoteButton = document.querySelector('#death-note-button');
 var erasedButton = document.querySelector('#erased-button');
 var demonSlayerButton = document.querySelector('#demon-slayer-button');
 
+var deathNoteImages = document.querySelector('#img-death-note');
 var demonSlayerImages = document.querySelector('#img-demon-slayer');
 var erasedImages = document.querySelector('#img-erased');
 
@@ -73,6 +74,13 @@ viewAll.addEventListener('click', function(e){
     for (var i of imgVisibility){
         i.style.display = "none";
     }
+});
+
+deathNoteButton.addEventListener('click', function(){
+    for(var v of visibility) {
+        v.style.display = "none";
+    }
+    deathNoteImages.style.display = "block";
 });
 
 demonSlayerButton.addEventListener('click', function(){

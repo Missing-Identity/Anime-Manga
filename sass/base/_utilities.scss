@@ -31,10 +31,10 @@
 }
 
 .reviews-div {
-    text-align: center;
-
     .img-reviews {
-        margin: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
 
         @include respond(tab-port){
             width: 100%;

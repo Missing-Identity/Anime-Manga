@@ -1,6 +1,8 @@
 .imgs {
+    text-align: center;
 
     &__death-note{
+        display: none;
         background-color: $color-black;
     }
 
