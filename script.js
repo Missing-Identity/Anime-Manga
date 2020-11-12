@@ -18,9 +18,13 @@ var deathNoteButton = document.querySelector('#death-note-button');
 var erasedButton = document.querySelector('#erased-button');
 var demonSlayerButton = document.querySelector('#demon-slayer-button');
 
+var tasogareButton = document.querySelector('#tasogare-button');
+
 var deathNoteImages = document.querySelector('#img-death-note');
 var demonSlayerImages = document.querySelector('#img-demon-slayer');
 var erasedImages = document.querySelector('#img-erased');
+
+var tasogareImages = document.querySelector('#img-tasogare');
 
 search.addEventListener('click', function(){
     featuredReview.style.display = "none";
@@ -110,6 +114,14 @@ erasedSection.addEventListener('click', function(){
     }
     erasedImages.style.display = "block";
 });
+
+
+tasogareButton.addEventListener('click', function(){
+    for(var v of visibility) {
+        v.style.display = "none";
+    }
+    tasogareImages.style.display = "block";
+})
 
 
 
