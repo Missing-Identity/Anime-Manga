@@ -1435,6 +1435,9 @@ body {
   .imgs__demon-slayer {
     display: none;
     background-image: linear-gradient(105deg, #f7f7f7, #4d88ff); }
+  .imgs__orv {
+    display: none;
+    background-image: linear-gradient(to right bottom, #2C3E50, #FD746C); }
   .imgs__tasogare {
     display: none;
     background-image: linear-gradient(to right bottom, #3a6186, #89253e); }
