@@ -134,6 +134,14 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.back-to-rev-section {
+  text-decoration: underline;
+  font-size: 2rem; }
+  .back-to-rev-section__back-black {
+    color: #000000; }
+  .back-to-rev-section:hover {
+    cursor: pointer; }
+
 .u-center-text {
   text-align: center !important; }
 

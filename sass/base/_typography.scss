@@ -103,3 +103,16 @@ body {
         margin-bottom: 3rem;
     }
 }
+
+.back-to-rev-section {
+    text-decoration: underline;
+    font-size: 2rem;
+
+    &__back-black {
+        color: $color-black;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

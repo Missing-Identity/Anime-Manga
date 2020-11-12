@@ -12,6 +12,7 @@ var viewAll = document.querySelector('#viewbutton');
 var visibility = document.querySelectorAll('.section-visibility');
 var imgVisibility = document.querySelectorAll('.img-visibility');
 var featuredReview = document.querySelector('#featured-review');
+var backToReviewCards = document.querySelectorAll('.back-to-rev-section');
 
 var deathNoteButton = document.querySelector('#death-note-button');
 var erasedButton = document.querySelector('#erased-button');
@@ -75,6 +76,19 @@ viewAll.addEventListener('click', function(e){
         i.style.display = "none";
     }
 });
+
+for (var r of backToReviewCards){
+    r.addEventListener('click', function(e){
+        e.preventDefault();
+        featuredReview.style.display = "block";
+        for(var v of visibility){
+            v.style.display = "block";
+        }
+        for (var i of imgVisibility){
+            i.style.display = "none";
+        }
+    });
+}
 
 deathNoteButton.addEventListener('click', function(){
     for(var v of visibility) {
