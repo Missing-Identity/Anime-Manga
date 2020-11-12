@@ -29,3 +29,24 @@
 .u-margin-top-huge {
     margin-top: 10rem !important;
 }
+
+.reviews-div {
+    text-align: center;
+
+    .img-reviews {
+        margin: 2rem;
+
+        @include respond(tab-port){
+            width: 100%;
+        }
+    }
+
+    .img-border-white {
+        box-shadow: 0 1.5rem 4rem rgba($color-white, .4);
+    }
+
+    .img-border-black {
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    }
+
+}

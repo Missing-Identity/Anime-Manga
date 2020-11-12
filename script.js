@@ -10,7 +10,15 @@ var searchBar = document.querySelector('form');
 var search = document.querySelector('#searchbutton');
 var viewAll = document.querySelector('#viewbutton');
 var visibility = document.querySelectorAll('.section-visibility');
+var imgVisibility = document.querySelectorAll('.img-visibility');
 var featuredReview = document.querySelector('#featured-review');
+
+var deathNoteButton = document.querySelector('#death-note-full');
+var erasedButton = document.querySelector('#erased-button');
+var demonSlayerButton = document.querySelector('#demon-slayer-button');
+
+var demonSlayerImages = document.querySelector('#img-demon-slayer');
+var erasedImages = document.querySelector('#img-erased');
 
 search.addEventListener('click', function(){
     featuredReview.style.display = "none";
@@ -62,6 +70,25 @@ viewAll.addEventListener('click', function(e){
     for(var v of visibility){
         v.style.display = "block";
     }
+    for (var i of imgVisibility){
+        i.style.display = "none";
+    }
 });
+
+demonSlayerButton.addEventListener('click', function(){
+    for(var v of visibility) {
+        v.style.display = "none";
+    }
+    demonSlayerImages.style.display = "block";
+});
+
+erasedSection.addEventListener('click', function(){
+    for(var v of visibility) {
+        v.style.display = "none";
+    }
+    erasedImages.style.display = "block";
+});
+
+
 
 
