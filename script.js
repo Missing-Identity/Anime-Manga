@@ -17,6 +17,8 @@ var backToReviewCards = document.querySelectorAll('.back-to-rev-section');
 var deathNoteButton = document.querySelector('#death-note-button');
 var erasedButton = document.querySelector('#erased-button');
 var demonSlayerButton = document.querySelector('#demon-slayer-button');
+var dororoButton = document.querySelector('#dororo-button');
+var charlotteButton = document.querySelector('#charlotte-button');
 
 var orvButton = document.querySelector('#orv-button');
 var tasogareButton = document.querySelector('#tasogare-button');
@@ -24,6 +26,8 @@ var tasogareButton = document.querySelector('#tasogare-button');
 var deathNoteImages = document.querySelector('#img-death-note');
 var demonSlayerImages = document.querySelector('#img-demon-slayer');
 var erasedImages = document.querySelector('#img-erased');
+var dororoImages = document.querySelector('#img-dororo');
+var charlotteImages = document.querySelector('#img-charlotte');
 
 var orvImages = document.querySelector('#img-orv');
 var tasogareImages = document.querySelector('#img-tasogare');
@@ -110,11 +114,25 @@ demonSlayerButton.addEventListener('click', function(){
     demonSlayerImages.style.display = "block";
 });
 
-erasedSection.addEventListener('click', function(){
+erasedButton.addEventListener('click', function(){
     for(var v of visibility) {
         v.style.display = "none";
     }
     erasedImages.style.display = "block";
+});
+
+dororoButton.addEventListener('click', function(){
+    for(var v of visibility) {
+        v.style.display = "none";
+    }
+    dororoImages.style.display = "block";
+});
+
+charlotteButton.addEventListener('click', function(){
+    for(var v of visibility) {
+        v.style.display = "none";
+    }
+    charlotteImages.style.display = "block";
 });
 
 orvButton.addEventListener('click', function(){
