@@ -23,15 +23,7 @@ var initialDButton = document.querySelector('#initial-d-button');
 var orvButton = document.querySelector('#orv-button');
 var tasogareButton = document.querySelector('#tasogare-button');
 
-var deathNoteImages = document.querySelector('#img-death-note');
-var demonSlayerImages = document.querySelector('#img-demon-slayer');
-var erasedImages = document.querySelector('#img-erased');
-var dororoImages = document.querySelector('#img-dororo');
-var charlotteImages = document.querySelector('#img-charlotte');
 var universalImages = document.querySelector('#img-universal');
-var orvImages = document.querySelector('#img-orv');
-var tasogareImages = document.querySelector('#img-tasogare');
-
 
 var firstImage = document.querySelector('#img-1');
 var secondImage = document.querySelector('#img-2');
