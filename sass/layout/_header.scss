@@ -1,6 +1,6 @@
 .header {
     height: 95vh;
-    background-image: linear-gradient(to bottom , rgba($color-primary-dark, 0.5), rgba($color-primary, 0.5)), url("https://i.ibb.co/6mzjntZ/Desktop-1.png");
+    background-image: linear-gradient(to bottom , rgba($color-primary-dark, 0.5), rgba($color-primary, 0.5)), url("https://i.ibb.co/NKPy0P6/Desktop-1-min.png");
     background-size: cover;
     background-position: top;
     position: relative;
@@ -46,7 +46,7 @@
 
 .header-reviews {
     height: 95vh;
-    background-image: linear-gradient(to bottom , rgba($color-wiretap-1, 0.6), rgba($color-wiretap-2, 0.6), rgba($color-wiretap-3, 0.6)), url("https://i.ibb.co/HGjPXMJ/Reviews-Desktop.jpg");
+    background-image: linear-gradient(to bottom , rgba($color-wiretap-1, 0.6), rgba($color-wiretap-2, 0.6), rgba($color-wiretap-3, 0.6)), url("https://i.ibb.co/chVhbR4/Reviews-Desktop-min.jpg");
     background-size: cover;
     background-position: top;
     position: relative;
@@ -54,7 +54,7 @@
 
     @include respond(tab-port) {
         height: 100vh;
-        background-image: linear-gradient(to bottom , rgba($color-wiretap-1, 0.6), rgba($color-wiretap-2, 0.6), rgba($color-wiretap-3, 0.6)), url("https://i.ibb.co/k9WFRDD/Reviews-Mobile.jpg");;
+        background-image: linear-gradient(to bottom , rgba($color-wiretap-1, 0.6), rgba($color-wiretap-2, 0.6), rgba($color-wiretap-3, 0.6)), url("https://i.ibb.co/ftVSZ01/edited-min.jpg");
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%);
     }
 

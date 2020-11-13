@@ -1441,7 +1441,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(127, 140, 141, 0.5)), url("https://i.ibb.co/6mzjntZ/Desktop-1.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(127, 140, 141, 0.5)), url("https://i.ibb.co/NKPy0P6/Desktop-1-min.png");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -1474,7 +1474,7 @@ body {
 
 .header-reviews {
   height: 95vh;
-  background-image: linear-gradient(to bottom, rgba(242, 113, 33, 0.6), rgba(233, 64, 87, 0.6), rgba(138, 35, 135, 0.6)), url("https://i.ibb.co/HGjPXMJ/Reviews-Desktop.jpg");
+  background-image: linear-gradient(to bottom, rgba(242, 113, 33, 0.6), rgba(233, 64, 87, 0.6), rgba(138, 35, 135, 0.6)), url("https://i.ibb.co/chVhbR4/Reviews-Desktop-min.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -1482,7 +1482,7 @@ body {
   @media (max-width: 56.25em) {
     .header-reviews {
       height: 100vh;
-      background-image: linear-gradient(to bottom, rgba(242, 113, 33, 0.6), rgba(233, 64, 87, 0.6), rgba(138, 35, 135, 0.6)), url("https://i.ibb.co/k9WFRDD/Reviews-Mobile.jpg");
+      background-image: linear-gradient(to bottom, rgba(242, 113, 33, 0.6), rgba(233, 64, 87, 0.6), rgba(138, 35, 135, 0.6)), url("https://i.ibb.co/ftVSZ01/edited-min.jpg");
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%); } }
   .header-reviews__logo-box {
     position: absolute;
@@ -1790,7 +1790,7 @@ body {
         margin-top: 6rem; } }
   @media (max-width: 56.25em) {
     .section-review {
-      background-image: linear-gradient(to right bottom, rgba(255, 119, 48, 0.4), rgba(255, 185, 0, 0.4)), url(../img/Reviews-BG-Mobile.png);
+      background-image: linear-gradient(to right bottom, rgba(255, 119, 48, 0.4), rgba(255, 185, 0, 0.4)), url(../img/Reviews-BG-Mobile-min.png);
       background-size: cover;
       padding: 20rem 0;
       margin-top: -10vh; } }
@@ -1817,7 +1817,7 @@ body {
         margin-top: 6rem; } }
   @media (max-width: 56.25em) {
     .section-podcast {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.7), rgba(86, 67, 250, 0.7)), url(../img/Podcast-BG-Mobile.png);
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.7), rgba(86, 67, 250, 0.7)), url(../img/Podcast-BG-Mobile-min.png);
       background-size: stretch;
       padding: 15rem 0;
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%);
