@@ -19,7 +19,7 @@ var erasedButton = document.querySelector('#erased-button');
 var demonSlayerButton = document.querySelector('#demon-slayer-button');
 var dororoButton = document.querySelector('#dororo-button');
 var charlotteButton = document.querySelector('#charlotte-button');
-
+var initialDButton = document.querySelector('#initial-d-button');
 var orvButton = document.querySelector('#orv-button');
 var tasogareButton = document.querySelector('#tasogare-button');
 
@@ -28,9 +28,20 @@ var demonSlayerImages = document.querySelector('#img-demon-slayer');
 var erasedImages = document.querySelector('#img-erased');
 var dororoImages = document.querySelector('#img-dororo');
 var charlotteImages = document.querySelector('#img-charlotte');
-
+var universalImages = document.querySelector('#img-universal');
 var orvImages = document.querySelector('#img-orv');
 var tasogareImages = document.querySelector('#img-tasogare');
+
+
+var firstImage = document.querySelector('#img-1');
+var secondImage = document.querySelector('#img-2');
+var thirdImage = document.querySelector('#img-3');
+var fourthImage = document.querySelector('#img-4');
+var fifthImage = document.querySelector('#img-5');
+var sixthImage = document.querySelector('#img-6');
+var seventhImage = document.querySelector('#img-7');
+
+var goBack = document.querySelector('#go-back-button');
 
 search.addEventListener('click', function(){
     featuredReview.style.display = "none";
@@ -104,51 +115,145 @@ deathNoteButton.addEventListener('click', function(){
     for(var v of visibility) {
         v.style.display = "none";
     }
-    deathNoteImages.style.display = "block";
+    universalImages.style.display = "block";
+    universalImages.style.backgroundImage = "none";
+    universalImages.style.backgroundColor = "#000000";
+    firstImage.src = "https://i.ibb.co/MNGC0FG/Front-Page.png";
+    secondImage.src = "https://i.ibb.co/y4MZWp6/Page1.png";
+    thirdImage.src = "https://i.ibb.co/YZ6Hbrk/Page2.png";
+    fourthImage.src = "https://i.ibb.co/khgrs0j/Page3.png";
+    fifthImage.src = "https://i.ibb.co/ZfSsLQv/Page4.png";
+    sixthImage.src = "";
+    seventhImage.src = "";
+
+    goBack.style.color = "#eeeeee";
+    goBack.scrollIntoView();
 });
 
 demonSlayerButton.addEventListener('click', function(){
     for(var v of visibility) {
         v.style.display = "none";
     }
-    demonSlayerImages.style.display = "block";
+    universalImages.style.display = "block";
+    universalImages.style.backgroundImage = "linear-gradient(to right bottom,  #f7f7f7, #4d88ff)";
+    firstImage.src = "https://i.ibb.co/HDYwRzL/Demon-Slayer-Title.png";
+    secondImage.src = "https://i.ibb.co/DVNnMf9/Demon-Slayer-Page-1.png";
+    thirdImage.src = "https://i.ibb.co/Ln6By6H/Demon-Slayer-Page-2.png";
+    fourthImage.src = "https://i.ibb.co/5Tm7mDW/Demon-Slayer-Page-3.png";
+    fifthImage.src = "https://i.ibb.co/RNtdDsV/Demon-Slayer-Page-4.png";
+    sixthImage.src = "";
+    seventhImage.src = "";
+
+    goBack.style.color = "#000000";
+    goBack.scrollIntoView();
 });
 
 erasedButton.addEventListener('click', function(){
     for(var v of visibility) {
         v.style.display = "none";
     }
-    erasedImages.style.display = "block";
+    universalImages.style.display = "block";
+    universalImages.style.backgroundImage = "linear-gradient(to right top, #D38312 0%, #b21f1f 20%, #000000 65%)";
+    firstImage.src = "https://i.ibb.co/56X39r9/Erased-Title.png";
+    secondImage.src = "https://i.ibb.co/zZk2MJf/Erased-Page-1.png";
+    thirdImage.src = "https://i.ibb.co/02CRwCz/Erased-Page-2.png";
+    fourthImage.src = "https://i.ibb.co/NTtgkq3/Erased-Page-3.png";
+    fifthImage.src = "";
+    sixthImage.src = "";
+    seventhImage.src = "";
+
+    goBack.style.color = "#eeeeee";
+    goBack.scrollIntoView();
 });
 
 dororoButton.addEventListener('click', function(){
     for(var v of visibility) {
         v.style.display = "none";
     }
-    dororoImages.style.display = "block";
+    universalImages.style.display = "block";
+    universalImages.style.backgroundImage = "radial-gradient(rgb(234, 209, 115) 0%, rgb(234, 209, 115) 80%, #000000 99%)";
+    firstImage.src = "https://i.ibb.co/z4y4sWv/Dororo-Front.png";
+    secondImage.src = "https://i.ibb.co/JFjFw0r/A4-1.png";
+    thirdImage.src = "https://i.ibb.co/hfvkd2n/A4-2.png";
+    fourthImage.src = "https://i.ibb.co/nL2V5rT/A4-3.png";
+    fifthImage.src = "https://i.ibb.co/CssDMHy/A4-4.png";
+    sixthImage.src = "";
+    seventhImage.src = "";
+
+    goBack.style.color = "#000000";
+    goBack.scrollIntoView();
 });
 
 charlotteButton.addEventListener('click', function(){
     for(var v of visibility) {
         v.style.display = "none";
     }
-    charlotteImages.style.display = "block";
+    universalImages.style.display = "block";
+    universalImages.style.backgroundImage = "linear-gradient(to right bottom,  #0f0c29, #302b63)";
+    firstImage.src = "https://i.ibb.co/6PQ29Y4/Charlotte-Title.png";
+    secondImage.src = "https://i.ibb.co/x6Q90md/Charlotte-1.png";
+    thirdImage.src = "https://i.ibb.co/4gG9vfz/Charlotte-2.png";
+    fourthImage.src = "https://i.ibb.co/YpL89pP/Charlotte-3.png";
+    fifthImage.src = "https://i.ibb.co/wLfYXsT/Charlotte-Conclusion.png";
+    sixthImage.src = "";
+    seventhImage.src = "";
+
+    goBack.style.color = "#eeeeee";
+    goBack.scrollIntoView();
 });
 
 orvButton.addEventListener('click', function(){
     for(var v of visibility) {
         v.style.display = "none";
     }
-    orvImages.style.display = "block";
+    universalImages.style.display = "block";
+    universalImages.style.backgroundImage = "linear-gradient(to right bottom,  #2C3E50, #FD746C)";
+    firstImage.src = "https://i.ibb.co/zsyKDHW/A4-3.png";
+    secondImage.src = "https://i.ibb.co/ZLqS7Pb/A4-4.png";
+    thirdImage.src = "https://i.ibb.co/zRRhQVX/A4-5.png";
+    fourthImage.src = "https://i.ibb.co/ygV6YLN/A4-6.png";
+    fifthImage.src = "https://i.ibb.co/ZJBjy69/A4-7.png";
+    sixthImage.src = "https://i.ibb.co/VmRq2Y7/A4-8.png";
+    seventhImage.src = "https://i.ibb.co/PgSNLpq/A4-9.png";
+
+    goBack.style.color = "#eeeeee";
+    goBack.scrollIntoView();
 });
 
 tasogareButton.addEventListener('click', function(){
     for(var v of visibility) {
         v.style.display = "none";
     }
-    tasogareImages.style.display = "block";
+    universalImages.style.display = "block";
+    universalImages.style.backgroundImage = "linear-gradient(to right bottom,  #3a6186, #89253e)";
+    firstImage.src = "https://i.ibb.co/QDsjsVf/Front-Page.png";
+    secondImage.src = "https://i.ibb.co/7jdPSb3/Page-1.png";
+    thirdImage.src = "https://i.ibb.co/rM35YTJ/Page-2.png";
+    fourthImage.src = "https://i.ibb.co/wscChCx/Page-3.png";
+    fifthImage.src = "";
+    sixthImage.src = "";
+    seventhImage.src = "";
+
+    goBack.style.color = "#eeeeee";
+    goBack.scrollIntoView();
 });
 
+initialDButton.addEventListener('click', function(){
+    for(var v of visibility) {
+        v.style.display = "none";
+    }
+    universalImages.style.display = "block";
+    universalImages.style.backgroundImage = "linear-gradient(to right bottom, #eeeeee, #999999)";
+    firstImage.src = "https://i.ibb.co/qD7DL3d/review-cover.png";
+    secondImage.src = "https://i.ibb.co/Jmj6vHh/page-1.png";
+    thirdImage.src = "https://i.ibb.co/djck4JB/page-2.png";
+    fourthImage.src = "https://i.ibb.co/wWfM4dK/page-3.png";
+    fifthImage.src = "";
+    sixthImage.src = "";
+    seventhImage.src = "";
 
+    goBack.style.color = "#000000";
+    goBack.scrollIntoView();
+});
 
 

@@ -108,9 +108,7 @@ body {
     text-decoration: underline;
     font-size: 2rem;
 
-    &__back-black {
-        color: $color-black;
-    }
+    color: $color-white;
 
     &:hover {
         cursor: pointer;

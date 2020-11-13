@@ -1,38 +1,9 @@
 .imgs {
     text-align: center;
 
-    &__death-note{
+    &__universal {
         display: none;
-        background-color: $color-black;
+        background-image: none;
     }
 
-    &__erased {
-        display: none;
-        background-image: linear-gradient(to right top, $color-erased-2 0%, $color-erased-1 20%, $color-black 65%);
-    }
-
-    &__demon-slayer {
-        display: none;
-        background-image: linear-gradient(105deg, $color-grey-light-1, $color-demon-slayer-3);
-    }
-
-    &__dororo {
-        display: none;
-        background-image: radial-gradient($color-dororo-1 0%, $color-dororo-1 80%, $color-black 99%);
-    }
-
-    &__charlotte {
-        display: none;
-        background-image: linear-gradient($color-charlotte-1, $color-charlotte-2);
-    }
-
-    &__orv {
-        display: none;
-        background-image: linear-gradient(to right bottom, $color-orv-1, $color-orv-2);
-    }
-
-    &__tasogare {
-        display: none;
-        background-image: linear-gradient(to right bottom, $color-tasogare-1, $color-tasogare-2);
-    }
 }
