@@ -50,7 +50,7 @@ search.addEventListener('click', function(){
         console.log("Searched Demon Slayer!");
         demonSlayerSection.style.display = "block";
     }
-    else if (name.value.toUpperCase().trim() == "ERASED" || name.value.toUpperCase().trim() == "BOKU DAKE GA INAI MACHI") {
+    else if (name.value.toUpperCase().trim() == "ERASED" || name.value.toUpperCase().trim() == "BOKU DAKE GA INAI MACHI" || name.value.toUpperCase().trim() == "ER" || name.value.toUpperCase().trim() == "ERA") {
         console.log("Erased searched!");
         erasedSection.style.display = "block";
     }
@@ -62,7 +62,7 @@ search.addEventListener('click', function(){
         console.log("Dororo searched!");
         dororoSection.style.display = "block";
     }
-    else if (name.value.toUpperCase().trim() == "INITIAL D" || name.value.toUpperCase().trim() == "INITIAL-D" || name.value.toUpperCase().trim() == "INITIALD") {
+    else if (name.value.toUpperCase().trim() == "INITIAL D" || name.value.toUpperCase().trim() == "INITIAL-D" || name.value.toUpperCase().trim() == "INITIALD" || name.value.toUpperCase().trim() ==  "INITIAL") {
         console.log("Initial-D searched!");
         initialDSection.style.display = "block";
     }
@@ -73,6 +73,47 @@ search.addEventListener('click', function(){
     else if (name.value.toUpperCase().trim() == "TASOGARE OTOME X AMNESIA" || name.value.toUpperCase().trim() == "TASOGAREOTOMEXAMNESIA" || name.value.toUpperCase().trim() == "TASOGARE OTOME AMNESIA" || name.value.toUpperCase().trim() == "TASOGAREOTOMEAMNESIA" || name.value.toUpperCase().trim() == "DUSK MAIDEN OF AMNESIA" || name.value.toUpperCase().trim() == "DUSKMAIDENOFAMNESIA" || name.value.toUpperCase().trim() == "TASOGARE" || name.value.toUpperCase().trim() == "DUSK MAIDEN") {
         console.log("Tasogare searched");
         tasogareSection.style.display = "block";
+    }
+    else if (name.value.toUpperCase().trim() == "E"){
+        erasedSection.style.display = "block";
+    }
+    else if(name.value.toUpperCase().trim() == "D") {
+        demonSlayerSection.style.display = "block";
+        deathNoteSection.style.display = "block";
+        dororoSection.style.display = "block";
+        initialDSection.style.display = "block";
+        tasogareSection.style.display = "block";
+    }
+    else if(name.value.toUpperCase().trim() == "DE"){
+        demonSlayerSection.style.display = "block";
+        deathNoteSection.style.display = "block";
+    }
+    else if(name.value.toUpperCase().trim() ==  "DO"){
+        dororoSection.style.display = "block";
+    }
+    else if(name.value.toUpperCase().trim() ==  "C"){
+        charlotteSection.style.display = "block";
+    }
+    else if(name.value.toUpperCase().trim() ==  "CHAR") {
+        charlotteSection.style.display = "block";
+    }
+    else if(name.value.toUpperCase().trim() == "T"){
+        tasogareSection.style.display = "block";
+    }
+    else if(name.value.toUpperCase().trim() ==  "TASO"){
+        tasogareSection.style.display = "block";
+    }
+    else if(name.value.toUpperCase().trim() ==  "DU" || name.value.toUpperCase().trim() ==  "DUSK"){
+        tasogareSection.style.display = "block";
+    }
+    else if(name.value.toUpperCase().trim() ==  "O"){
+        orvSection.style.display = "block";
+    }
+    else if(name.value.toUpperCase().trim() ==  "OR") {
+        orvSection.style.display = "block";
+    }
+    else if(name.value.toUpperCase().trim() ==  "I"){
+        initialDSection.style.display = "block";
     }
     else {
         console.log("Invalid name searched!");
@@ -88,6 +129,7 @@ viewAll.addEventListener('click', function(e){
     for (var i of imgVisibility){
         i.style.display = "none";
     }
+    demonSlayerSection.scrollIntoView();
 });
 
 for (var r of backToReviewCards){
