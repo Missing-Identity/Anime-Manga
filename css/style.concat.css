@@ -925,7 +925,8 @@ ORDER: Base + Typography > general layout + grid > page layout > components
   /*This changes the box model so that the borders and the paddings are no longer added to the total width or height that we specify in the box.*/ }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media (max-width: 112.5em) {
     html {
       font-size: 65%; } }
